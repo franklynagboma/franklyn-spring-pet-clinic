@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class OwnersController {
 
+    // empty space need for when just prefix, it work well
+    // without empty since spring 5 but just to make sure no
+    // assumption.
     @RequestMapping(value = {"", "/", "/index", "/index.html"})
     public String modelDisplayListOfOwners() {
 

@@ -4,17 +4,22 @@
 package com.dev.franklynspringpetclinic.service.map;
 
 import com.dev.franklynspringpetclinic.model.Owner;
-import com.dev.franklynspringpetclinic.service.CrudService;
+import com.dev.franklynspringpetclinic.service.OwnerService;
 
 import java.util.Set;
 
 public class OwnerServiceMap
         extends AbstractMapService<Owner, Long>
-        implements CrudService<Owner, Long> {
+        implements OwnerService {
 
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 
     @Override

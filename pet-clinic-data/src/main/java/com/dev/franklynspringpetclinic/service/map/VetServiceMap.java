@@ -4,13 +4,13 @@
 package com.dev.franklynspringpetclinic.service.map;
 
 import com.dev.franklynspringpetclinic.model.Vet;
-import com.dev.franklynspringpetclinic.service.CrudService;
+import com.dev.franklynspringpetclinic.service.VetService;
 
 import java.util.Set;
 
 public class VetServiceMap 
         extends AbstractMapService<Vet, Long>
-        implements CrudService<Vet, Long> {
+        implements VetService {
     @Override
     public Vet findById(Long id) {
         return super.findById(id);

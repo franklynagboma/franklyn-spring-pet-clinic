@@ -5,9 +5,11 @@ package com.dev.franklynspringpetclinic.service.map;
 
 import com.dev.franklynspringpetclinic.model.Vet;
 import com.dev.franklynspringpetclinic.service.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap 
         extends AbstractMapService<Vet, Long>
         implements VetService {

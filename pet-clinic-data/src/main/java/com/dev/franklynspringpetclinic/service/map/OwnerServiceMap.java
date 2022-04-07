@@ -5,9 +5,11 @@ package com.dev.franklynspringpetclinic.service.map;
 
 import com.dev.franklynspringpetclinic.model.Owner;
 import com.dev.franklynspringpetclinic.service.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap
         extends AbstractMapService<Owner, Long>
         implements OwnerService {
